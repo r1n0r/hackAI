@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat GPT API</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="form-results.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo-transparent.png" alt="logo"></a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href=".contact-header">Contact</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <a href="#signup" class="header-btn">Sign Up</a>
+      </header>
+  <!-- Chat Section -->
+  <div class="container">
+    <h1 class="header">Chat with Your AI Doctor</h1>
+    <div class="form-description">
+      <p>Welcome to the future of healthcare! Simply type your question below to interact with our AI-powered doctor. From symptoms and treatments to general health advice, the AI doctor provides quick and accurate responses to help you.</p>
+    </div>
+    <form id="chat-form" class="form">
+      <input
+        type="text"
+        id="user-input"
+        class="input"
+        placeholder="Write anything medical related..."
+        required
+      />
+      <button type="submit" class="button">
+        <i class="fas fa-paper-plane"></i> Send
+      </button>
+    </form>
+    <div id="chat-box" class="chat-box">
+      <!-- Chat messages will appear here -->
+    </div>
+  </div>
+
+  <script src="form-results.js"></script>
+</body>
+</html>
